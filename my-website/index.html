@@ -35,21 +35,25 @@
 </head>
 
 <body>
+  <!-- Navbar with logo and search -->
   <div class="navbar">
-    <!-- Logo on top-left -->
+    <!-- Logo on the left -->
     <a href="index.html">
       <img src="assets/mobiebit-logo.png" alt="Mobiebit Logo" class="logo">
     </a>
+    <!-- Navigation links and search bar -->
     <div class="nav-links">
       <a href="index.html">Home</a>
       <input type="text" class="search-bar" placeholder="Search..." onfocus="openSearchModal()" />
     </div>
   </div>
 
+  <!-- Banner section -->
   <div class="banner" id="banner">
     <h1 id="banner-title"></h1>
   </div>
 
+  <!-- Movie rows -->
   <div class="row">
     <h2>Trending Movies</h2>
     <div class="list" id="movies-list"></div>
@@ -65,6 +69,7 @@
     <div class="list" id="anime-list"></div>
   </div>
 
+  <!-- Modal -->
   <div class="modal" id="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()" style="color: red;">&times;</span>
@@ -89,12 +94,14 @@
     </div>
   </div>
 
+  <!-- Search Modal -->
   <div class="search-modal" id="search-modal">
     <span class="close" onclick="closeSearchModal()" style="color: red;">&times;</span>
     <input type="text" id="search-input" placeholder="Search for a movie or show..." oninput="searchTMDB()" />
     <div class="results" id="search-results"></div>
   </div>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="footer-content">
       <p>&copy; 2025 My Website. All rights reserved.</p>
