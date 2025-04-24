@@ -1,9 +1,6 @@
+<!DOCTYPE html>
 <html lang="en">
-<!-- Logo with link to home -->
-<a href="index.html">
-  <img src="assets/mobiebit-logo.png" alt="Mobiebit Logo" style="height: 60px;">
-</a>
-  <head>
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MovieBit</title>
@@ -13,11 +10,36 @@
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <script defer src="js/home.js"></script>
+  <style>
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: #111;
+    }
+    .navbar img.logo {
+      height: 60px;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .search-bar {
+      padding: 5px;
+      border-radius: 5px;
+      border: none;
+    }
+  </style>
 </head>
-<img src="logo" alt="Mobiebit Logo" class="logo-img">
+
 <body>
   <div class="navbar">
-    <img src="logo.png" alt="LOGO HERE" />
+    <!-- Logo on top-left -->
+    <a href="index.html">
+      <img src="assets/mobiebit-logo.png" alt="Mobiebit Logo" class="logo">
+    </a>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <input type="text" class="search-bar" placeholder="Search..." onfocus="openSearchModal()" />
@@ -47,14 +69,14 @@
     <div class="modal-content">
       <span class="close" onclick="closeModal()" style="color: red;">&times;</span>
       <div class="modal-body">
-  <img id="modal-image" src="" alt="" />
-  <div class="modal-text">
-    <h2 id="modal-title"></h2>
-    <div class="stars" id="modal-rating"></div>
-    <p id="modal-description"></p>
-  </div>
-</div>
-      
+        <img id="modal-image" src="" alt="" />
+        <div class="modal-text">
+          <h2 id="modal-title"></h2>
+          <div class="stars" id="modal-rating"></div>
+          <p id="modal-description"></p>
+        </div>
+      </div>
+
       <div class="server-selector">
         <label for="server">Change Server:</label>
         <select id="server" onchange="changeServer()">
@@ -73,16 +95,15 @@
     <div class="results" id="search-results"></div>
   </div>
 
-<footer class="footer">
-  <div class="footer-content">
-    <p>&copy; 2025 My Website. All rights reserved.</p>
-    <div class="footer-links">
-      <a href="#">Disclaimer</a>
-      <a href="#">About Us</a>
-      <a href="#">Contact Us</a>
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 My Website. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Disclaimer</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+      </div>
     </div>
-  </div>
-</footer>
-
-  
+  </footer>
 </body>
+</html>
