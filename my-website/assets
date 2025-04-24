@@ -1,14 +1,1 @@
-# Step into your project directory
-cd path/to/your/project
-
-# Move the file into your project if it's not there already
-mv ~/Downloads/mobiebit-logo.png assets/
-
-# Add the new file
-git add assets/mobiebit-logo.png
-
-# Commit the change
-git commit -m "Add Mobiebit logo"
-
-# Push to GitHub
-git push
+mobiebit-logo.png
